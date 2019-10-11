@@ -7,27 +7,27 @@ class Navigation extends Component {
         const {user, logOutUser} = this.props;
         return <nav className="site-nav family-sans navbar navbar-expand bg-primary navbar-dark higher">
         <div className="container-fluid">
-          <Link to="/" className="navbar-brand">
+          <Link to="/code/reactspa/" className="navbar-brand">
             <FaUsers /> Meeting Log
           </Link>
           <div className="navbar-nav ml-auto">
               { user && (
-                  <Link className="nav-item nav-link" to="/meetings">
+                  <Link className="nav-item nav-link" to="/code/reactspa/meetings">
                   meetings
                 </Link>
               )}
               { !user && (
-                  <Link className="nav-item nav-link" to="/login">
+                  <Link className="nav-item nav-link" to="/code/reactspa/login">
                   log in
                 </Link>
               )}
               { !user && (
-                  <Link className="nav-item nav-link" to="/register">
+                  <Link className="nav-item nav-link" to="/code/reactspa/register">
                   register
                 </Link>
               )}
               { user && (
-                  <Link className="nav-item nav-link" to="/login" onClick={e => logOutUser(e)}>
+                  <Link className="nav-item nav-link" to="/code/reactspa/login" onClick={e => logOutUser(e)}>
                   log out
                 </Link>
               )}

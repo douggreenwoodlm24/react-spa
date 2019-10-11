@@ -104,20 +104,20 @@ class App extends Component {
         {this.state.user && <Welcome userName={this.state.displayName} logOutUser={this.logOutUser} />}
 
         <Router>
-          <Home path="/" user={this.state.user} />
-          <Login path="/login" />
+          <Home path="/code/reactspa/" user={this.state.user} />
+          <Login path="/code/reactspa/login" />
           <Meetings 
-            path="/meetings" 
+            path="/code/reactspa/meetings" 
             meetings={this.state.meetings}
             userID={this.state.userID} 
             addMeeting={this.addMeeting} />
           <Attendees
-            path="/attendees/:userID/:meetingID"
+            path="/code/reactspa/attendees/:userID/:meetingID"
             adminUser={this.state.userID}
           />
-          <CheckIn path="/checkin/:userID/:meetingID" />
+          <CheckIn path="/code/reactspa/checkin/:userID/:meetingID" />
           <Register
-            path="/register"
+            path="/code/reactspa/register"
             registerUser={this.registerUser}
           />
         </Router>
