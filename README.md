@@ -1,3 +1,5 @@
+This simple React.js app creates meetings and allows people to log in, register and check in. It's an example of a Single Page Application which includes connection to a database and routing, and was developed in create-react-app as part of the Lynda.com course "React: SPAs". It was a practical way to learn React with Firebase.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
